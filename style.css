@@ -11,19 +11,25 @@ img{
     height: 30px;
 }
 
-  h1{
+h1{
     text-align: center;
     color: aliceblue;
-  }
+    font-size: 60px;
+}
+h2{
+    text-align: center;
+    color: aliceblue;
+    font-size: 40px;
+}
   
-  .list-container {
+.list-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
-  }
+}
   
-  #new {
+#new {
     flex-grow: 1; 
     padding: 5px;
     border: 1px solid #ccc;
@@ -33,7 +39,7 @@ img{
     font-family: "Exo 2", sans-serif;  
 }
   
-  #addBtn {
+#addBtn {
     padding: 5px 10px;
     border: none;
     border-radius: 5px;
@@ -44,19 +50,19 @@ img{
     height: 40px;
     width: 80px;
     transition: 0.5s;
-  }
+}
   
-  #addBtn:hover {
+#addBtn:hover {
     background-color: aliceblue; 
-  }
+}
   
-  ul {
+ul {
     list-style: none;
     padding: 0;
     margin: 0;
-  }
+}
   
-  li {
+li {
     margin-bottom: 5px;
     padding: 10px;
     border: 1px solid #ddd;
