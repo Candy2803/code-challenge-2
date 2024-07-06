@@ -35,7 +35,7 @@ If the user tries to add an empty input an alert will pop to tell the user that 
 
 #### Wanna get the code to this amazing website:
 **Well I got you**. Just follow the steps below:
-**(Don't worry there will be pictures)**
+**(Don't worry there will be pictures😅😅)**
 
 1. Open your broswer and copy the following: https://github.com/Candy2803/code-challenge-2 and the below page will show.
 ![screenshot](./images/Screenshot%202024-07-06%20at%2012.50.14.png)
@@ -45,6 +45,6 @@ If the user tries to add an empty input an alert will pop to tell the user that 
 
 3. Next open your terminal and type git clone (link that you copied) ie: git clone git@github.com:Candy2803/Wk-2-code-challenge.git
 
-HOORAH YOU DID IT. You have successfully cloned my repo to your local machine.
+HOORAH! YOU DID IT 🥳🥳. You have successfully cloned my repo to your local machine.
 
 **AUTHORED BY**: CANDY MZUNGU
