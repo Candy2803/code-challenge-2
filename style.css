@@ -75,7 +75,6 @@ li {
     font-size: 25px;
 }
 .purchased {
-    text-decoration: line-through;
     color: rgb(113, 239, 113);
     font-family: "Exo 2", sans-serif;
 }

@@ -9,30 +9,29 @@ function addToList() {
   }
 
   const liItem = document.createElement('li');
-
   liItem.textContent = newItem;
 
+  let clickCount = 0; 
+  const colors = ['lightgreen', 'red', 'aliceblue']; 
+
   liItem.addEventListener('click', function() {
-    this.classList.toggle('purchased');
+    clickCount = (clickCount + 1) % colors.length; 
+    this.style.color = colors[clickCount];
   });
 
-  // Create a delete button element
   const deleteButton = document.createElement('button');
-  deleteButton.classList.add('delete-btn'); // Add class for styling (optional)
-  deleteButton.textContent = '🚮';
+  deleteButton.classList.add('delete-btn'); 
+  deleteButton.textContent = '✅';
 
-  // Function to handle deleting an item
-  function deleteItem(event) {
+  deleteButton.addEventListener('click', function(event) { 
     const clickedButton = event.target;
-    const itemId = clickedButton.dataset.id;
+    const itemId = clickedButton.dataset.itemId; 
     const itemElement = document.getElementById(itemId);
     itemElement.parentNode.removeChild(itemElement);
-  }
+  });
 
-  // Add event listener to the delete button
-  deleteButton.addEventListener('click', deleteItem);
+  liItem.dataset.itemId = Math.random().toString(36).substring(2, 15); 
 
-  // Append the new list item and delete button to the existing list
   liItem.appendChild(deleteButton);
   const list = document.getElementById('list');
   list.appendChild(liItem);
@@ -40,18 +39,10 @@ function addToList() {
   newItemInput.value = '';
 }
 
-// Event listener for the "Add" button click
 const addButton = document.getElementById('addBtn');
 addButton.addEventListener('click', addToList);
 
-// Event listener for the "Clear List" button click (assuming ID "clearBtn")
 const clearButton = document.getElementById('clearBtn');
 clearButton.addEventListener('click', function() {
-  list.innerHTML = ''; // Clear all list items
-});
-
-// Add event listener to existing delete buttons (if any) on page load
-const deleteButtons = document.querySelectorAll('.delete-btn');
-deleteButtons.forEach(button => {
-  button.addEventListener('click', deleteItem);
+  list.innerHTML = ''; 
 });

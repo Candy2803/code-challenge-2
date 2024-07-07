@@ -28,8 +28,11 @@ The image below shows how the Website looks like:
 On typing the item in the text box provided, click on the green button to add it to the list as below. to clear the list click on the red button
 ![screenshot](./images/Screenshot%202024-07-06%20at%2012.47.04.png)
 
-If the user wants to delete a specific item from the list there is a delete button beside the item.
-![screenshot](./images/Screenshot%202024-07-06%20at%2014.45.34.png)
+If the user wants mark that the item has not been bought he/she should click on the item until it turns red as below.
+![screenshot](./images/Screenshot%202024-07-07%20at%2010.52.50.png)
+
+if the user want to mark that the item in the list is bought he/she should click on the item until it turns green as below.
+![screenshot](./images/Screenshot%202024-07-07%20at%2010.57.16.png)
 
 If the user tries to add an empty input an alert will pop to tell the user that no item has been put 
 ![screenshot](./images/Screenshot%202024-07-06%20at%2012.49.11.png)
